@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         if(orio.isChecked())
                             toppings.append(" "+getString(R.string.orio_cookie_crumbles));
                         if(!(chocolate.isChecked()||sprinkles.isChecked()||crushed_nuts.isChecked()
-                        ||cherries.isChecked()||orio.isChecked()))
+                        ||cherries.isChecked()||orio.isChecked()))//if all is not checked
                             toppings.append(" None");
 
                         Toast.makeText(MainActivity.this,toppings.toString(),Toast.LENGTH_LONG
